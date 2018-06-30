@@ -1,14 +1,13 @@
 <?php
-
-/* @var $this yii\web\View */
+use yii\helpers\Html;
 
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <p><a class="btn btn-lg btn-success" href="http://basic/web/index.php?r=category%2Findex">Category</a></p>
-        <p><a class="btn btn-lg btn-success" href="http://basic/web/index.php?r=post%2Findex">Post</a></p>
+        <p><?= Html::a('Category', ['/category/index'], ['class' => 'btn btn-lg btn-success']) ?></p>
+        <p><?= Html::a('Post', ['/post/index'], ['class' => 'btn btn-lg btn-success']) ?></p>
     </div>
 
 </div>
